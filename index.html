@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mukesh Kumar — Full Stack Developer</title>
+  <meta name="description"
+    content="Personal portfolio of Mukesh Kumar — Full Stack Developer & MERN Stack Engineer. B.Tech CSE student at MSIT, GGSIPU. Building real-world products with clean code and AI integrations." />
+  <meta name="keywords"
+    content="Mukesh Kumar, Full Stack Developer, MERN Stack, React, Node.js, Portfolio, Web Developer, Delhi" />
+  <meta name="author" content="Mukesh Kumar" />
+  <meta property="og:description"
+    content="Full Stack Developer | MERN Stack | Building real-world products with clean code and AI integrations." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome removed: inline SVGs used instead — cuts an entire external
+       stylesheet + webfont request that was only needed for ~15 icons -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo" aria-label="Mukesh Kumar Home">mukesh</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" id="nav-about">about</a></li>
+      <li><a href="#experience" id="nav-experience">experience</a></li>
+      <li><a href="#projects" id="nav-projects">projects</a></li>
+      <li><a href="#skills" id="nav-skills">skills</a></li>
+      <li><a href="#education" id="nav-education">education</a></li>
+      <li><a href="#contact" id="nav-contact" class="nav-cta">contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="#about" class="mobile-nav-link">about</a></li>
+      <li><a href="#experience" class="mobile-nav-link">experience</a></li>
+      <li><a href="#projects" class="mobile-nav-link">projects</a></li>
+      <li><a href="#skills" class="mobile-nav-link">skills</a></li>
+      <li><a href="#education" class="mobile-nav-link">education</a></li>
+      <li><a href="#achievements" class="mobile-nav-link">achievements</a></li>
+      <li><a href="#contact" class="mobile-nav-link">contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero" aria-label="Hero section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-greeting">
+          <span class="hero-greeting-text">developer</span>
+        </div>
+        <h1 class="hero-name" id="hero-name">Mukesh Kumar</h1>
+        <p class="hero-tagline">
+          <strong>Full Stack Developer</strong> building MERN applications with
+          real-time features and <strong>AI integrations</strong> — currently
+          looking for SDE roles.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary" id="cta-view-projects">View projects</a>
+          <a href="https://drive.google.com/file/d/13q51ZMizKg_sBeF9G0LEc3DZWQloM7mS/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer" class="btn-secondary" id="cta-download-resume">Download resume</a>
+        </div>
+        <div class="hero-social">
+          <span class="hero-social-label">find me on</span>
+          <a href="https://github.com/MUKESH-KHUSWAHA" target="_blank" rel="noopener noreferrer" class="social-link"
+            id="hero-github" aria-label="GitHub profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.27 5.69.41.35.78 1.04.78 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/mukesh-kumar-467a85291/" target="_blank" rel="noopener noreferrer"
+            class="social-link" id="hero-linkedin" aria-label="LinkedIn profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z" />
+            </svg>
+          </a>
+          <a href="mailto:mukesh_cse_27@msit.in" class="social-link" id="hero-email" aria-label="Email Mukesh">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19.43 2.34-9.07 7.16a.6.6 0 0 1-.72 0L2.57 6.34A1 1 0 0 0 3 8.18l8.07 6.36a2.6 2.6 0 0 0 3.72 0L23 8.18a1 1 0 0 0 .43-1.84Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="terminal-window" aria-hidden="true">
+          <div class="terminal-titlebar">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-titlebar-label">mukesh@portfolio: ~</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line"><span class="terminal-prompt">$</span> cat profile.json</div>
+            <div class="terminal-line">{</div>
+            <div class="terminal-line">&nbsp;&nbsp;<span class="terminal-key">"role"</span>: <span
+                class="terminal-string">"Full Stack Developer"</span>,</div>
+            <div class="terminal-line">&nbsp;&nbsp;<span class="terminal-key">"stack"</span>: <span
+                class="terminal-string">"MERN"</span>,</div>
+            <div class="terminal-line">&nbsp;&nbsp;<span class="terminal-key">"college"</span>: <span
+                class="terminal-string">"MSIT, GGSIPU"</span>,</div>
+            <div class="terminal-line">&nbsp;&nbsp;<span class="terminal-key">"cgpa"</span>: <span
+                class="terminal-string">8.89</span>,</div>
+            <div class="terminal-line">&nbsp;&nbsp;<span class="terminal-key">"status"</span>: <span
+                class="terminal-string">"open_to_work"</span></div>
+            <div class="terminal-line">}</div>
+            <div class="terminal-line">&nbsp;</div>
+            <div class="terminal-line terminal-comment"># actively interviewing for SDE roles</div>
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              available for SDE roles
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span class="scroll-text">scroll</span>
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" aria-label="About section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">who-am-i</span>
+        <h2 class="section-title">About <span>me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Profile Photo -->
+        <div class="about-photo-col reveal">
+          <div class="about-photo-card">
+            <div class="about-photo-glow"></div>
+            <img src="mukesh.jpg" alt="Mukesh Kumar — Full Stack Developer" class="about-photo" id="about-profile-photo" />
+            <div class="about-photo-badge">
+              <span class="about-photo-badge-dot"></span>
+              Available for SDE roles
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats reveal reveal-delay-1">
+          <div class="stat-card">
+            <span class="stat-number">8.89</span>
+            <span class="stat-label">CGPA / 10</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Projects shipped</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">MERN</span>
+            <span class="stat-label">Primary stack</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2027</span>
+            <span class="stat-label">Graduation year</span>
+          </div>
+        </div>
+
+        <div class="about-text reveal reveal-delay-2">
+          <p class="bio">
+            I'm a <strong>Computer Science Engineering student</strong> at MSIT, GGSIPU (Batch 2027)
+            with a CGPA of <strong>8.89/10</strong>. I build full-stack web applications using the
+            <strong>MERN stack</strong>, with a focus on clean architecture, real-time features, and
+            <strong>AI integrations</strong>. I'm actively pursuing SDE roles at product-based companies.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div class="info-content">
+                <div class="info-label">Location</div>
+                <div class="info-value">New Delhi, India</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📱</span>
+              <div class="info-content">
+                <div class="info-label">Phone</div>
+                <div class="info-value">+91 9310347484</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🎓</span>
+              <div class="info-content">
+                <div class="info-label">University</div>
+                <div class="info-value">MSIT, GGSIPU</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">💼</span>
+              <div class="info-content">
+                <div class="info-label">Open to</div>
+                <div class="info-value">SDE / internships</div>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="https://github.com/MUKESH-KHUSWAHA" target="_blank" rel="noopener noreferrer" class="btn-primary"
+              style="font-size:0.82rem;padding:9px 20px;">GitHub</a>
+            <a href="https://www.linkedin.com/in/mukesh-kumar-467a85291/" target="_blank" rel="noopener noreferrer"
+              class="btn-secondary" style="font-size:0.82rem;padding:9px 20px;">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience" aria-label="Experience section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">work-history</span>
+        <h2 class="section-title">My <span>experience</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-title">Frontend Web Developer Intern</div>
+                <div class="timeline-company">HS Engineering</div>
+              </div>
+              <span class="timeline-date">Jun 2025 – Jul 2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed reusable frontend components for production web applications</li>
+              <li>Built responsive UIs using React.js, HTML, CSS, and JavaScript</li>
+              <li>Collaborated with developers to deliver features within project timelines</li>
+              <li>Improved UI consistency and component reusability across multiple pages</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/13VsDFnit9Lp5jzwyld6jxfPVhwcwYVRW/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer" class="cert-link" id="view-certificate">View certificate →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects" aria-label="Projects section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">what-ive-built</span>
+        <h2 class="section-title">Featured <span>projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- DevConnect -->
+        <div class="project-card reveal reveal-delay-1" id="project-devconnect">
+          <div class="project-top">
+            <div class="project-icon">🔗</div>
+            <div class="project-links">
+              <a href="https://github.com/MUKESH-KHUSWAHA/DevConnect.git" target="_blank" rel="noopener noreferrer"
+                class="project-link" id="devconnect-github" aria-label="DevConnect GitHub repository" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.27 5.69.41.35.78 1.04.78 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                </svg>
+              </a>
+              <a href="https://dev-connect-4akd.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="project-link" id="devconnect-demo" aria-label="DevConnect live demo" title="Live Demo">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">DevConnect</h3>
+          <p class="project-narrative">
+            A social platform built for developers to find each other, chat in real time, and share job leads —
+            the kind of community feature most dev tools bolt on as an afterthought. The harder part was
+            getting presence and typing indicators to feel instant over Socket.io without flooding the
+            server with events.
+          </p>
+          <ul class="project-description">
+            <li>MERN-based developer social platform with JWT authentication and REST APIs</li>
+            <li>Real-time messaging and online presence tracking using Socket.io</li>
+            <li>State management with Zustand for efficient client-side data handling</li>
+            <li>Deployed on Vercel (frontend) and Render (backend) for production-grade hosting</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Socket.io</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">Zustand</span>
+            <span class="tech-tag">Vercel</span>
+            <span class="tech-tag">Render</span>
+          </div>
+          <div class="project-action-links">
+            <a href="https://github.com/MUKESH-KHUSWAHA/DevConnect.git" target="_blank" rel="noopener noreferrer"
+              class="project-action-link github">GitHub</a>
+            <a href="https://dev-connect-4akd.vercel.app/" target="_blank" rel="noopener noreferrer"
+              class="project-action-link demo">Live demo</a>
+          </div>
+        </div>
+
+        <!-- Expense Tracker -->
+        <div class="project-card reveal reveal-delay-2" id="project-expense-tracker">
+          <div class="project-top">
+            <div class="project-icon">💰</div>
+            <div class="project-links">
+              <a href="https://github.com/MUKESH-KHUSWAHA/expense-tracker.git" target="_blank" rel="noopener noreferrer"
+                class="project-link" id="expense-github" aria-label="Expense Tracker GitHub repository" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.27 5.69.41.35.78 1.04.78 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                </svg>
+              </a>
+              <a href="https://expense-tracker-nine-pearl-63.vercel.app/dashboard" target="_blank"
+                rel="noopener noreferrer" class="project-link" id="expense-demo" aria-label="Expense Tracker live demo"
+                title="Live Demo">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Expense Tracker</h3>
+          <p class="project-narrative">
+            Most expense trackers just show you a list of numbers. This one summarizes your spending in plain
+            language using the Groq API, so you get an actual answer to "where did my money go this month?"
+            instead of a spreadsheet to interpret yourself.
+          </p>
+          <ul class="project-description">
+            <li>MERN-based expense tracker with secure authentication and CRUD operations</li>
+            <li>AI-generated spending insights via Groq API for personalized financial analysis</li>
+            <li>JWT-based session management for secure user data protection</li>
+            <li>Deployed on Vercel with clean, responsive dashboard UI</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Groq API</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+          <div class="project-action-links">
+            <a href="https://github.com/MUKESH-KHUSWAHA/expense-tracker.git" target="_blank" rel="noopener noreferrer"
+              class="project-action-link github">GitHub</a>
+            <a href="https://expense-tracker-nine-pearl-63.vercel.app/dashboard" target="_blank"
+              rel="noopener noreferrer" class="project-action-link demo">Live demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills" aria-label="Skills section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">technical-arsenal</span>
+        <h2 class="section-title">My <span>skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">💻</div>
+            <div class="skill-cat-name">Languages</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🎨</div>
+            <div class="skill-cat-name">Frontend</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">React Router</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Vite</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">⚡</div>
+            <div class="skill-cat-name">State &amp; Networking</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Zustand</span>
+            <span class="skill-tag">Axios</span>
+            <span class="skill-tag">Socket.io</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🛠️</div>
+            <div class="skill-cat-name">Backend</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">JWT Auth</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🗄️</div>
+            <div class="skill-cat-name">Database &amp; Cloud</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🔧</div>
+            <div class="skill-cat-name">Tools &amp; DevOps</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Render</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-4">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🧠</div>
+            <div class="skill-cat-name">Core CS</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">DSA</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">Computer Networks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION ==================== -->
+  <section id="education" aria-label="Education section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">academic-background</span>
+        <h2 class="section-title">My <span>education</span></h2>
+      </div>
+
+      <div class="education-grid">
+        <div class="edu-card reveal reveal-delay-1">
+          <span class="edu-icon">🎓</span>
+          <div class="edu-degree">B.Tech — Computer Science Engineering</div>
+          <div class="edu-institution">Maharaja Surajmal Institute of Technology (MSIT), GGSIPU</div>
+          <div style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">
+            Pursuing a full-stack focused curriculum with emphasis on software engineering, data structures, and modern
+            web technologies.
+          </div>
+          <div class="edu-meta">
+            <span class="edu-badge">CGPA: 8.89/10</span>
+            <span class="edu-year">Expected 2027</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal-delay-2">
+          <span class="edu-icon">📚</span>
+          <div class="edu-degree">Class XII (Higher Secondary)</div>
+          <div class="edu-institution">Central Board of Secondary Education (CBSE)</div>
+          <div style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">
+            Science stream with Computer Science. Demonstrated strong fundamentals in Mathematics and Physics.
+          </div>
+          <div class="edu-meta">
+            <span class="edu-badge">89.5%</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal-delay-3">
+          <span class="edu-icon">🏫</span>
+          <div class="edu-degree">Class X (Secondary)</div>
+          <div class="edu-institution">Central Board of Secondary Education (CBSE)</div>
+          <div style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">
+            Strong foundation in core subjects. Developed early interest in computers and problem-solving.
+          </div>
+          <div class="edu-meta">
+            <span class="edu-badge">81.66%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS ==================== -->
+  <section id="achievements" aria-label="Achievements section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">milestones</span>
+        <h2 class="section-title">My <span>achievements</span></h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card reveal reveal-delay-1">
+          <div class="achievement-icon-wrap">🏆</div>
+          <div class="achievement-title">Technical Society Member — Geek Room</div>
+          <div class="achievement-desc">Active member of the DSA Department at Geek Room, contributing to technical
+            growth and community learning.</div>
+        </div>
+
+        <div class="achievement-card reveal reveal-delay-2">
+          <div class="achievement-icon-wrap">⚔️</div>
+          <div class="achievement-title">DSA Contest Participant</div>
+          <div class="achievement-desc">Participated in DSA contests and collaborative problem-solving sessions,
+            sharpening algorithmic thinking.</div>
+        </div>
+
+        <div class="achievement-card reveal reveal-delay-3">
+          <div class="achievement-icon-wrap">🎓</div>
+          <div class="achievement-title">SWAYAM — Programming in Python</div>
+          <div class="achievement-desc">Completed the government-certified SWAYAM online course on Programming in
+            Python, strengthening core CS fundamentals.</div>
+        </div>
+
+        <div class="achievement-card reveal reveal-delay-4">
+          <div class="achievement-icon-wrap">⭐</div>
+          <div class="achievement-title">Academic Excellence — CGPA 8.89</div>
+          <div class="achievement-desc">Maintaining a strong CGPA of 8.89/10 in B.Tech CSE at MSIT, GGSIPU while
+            actively building full-stack projects.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" aria-label="Contact section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">get-in-touch</span>
+        <h2 class="section-title">Let's <span>connect</span></h2>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="reveal reveal-delay-1">
+          <h3 class="contact-heading">Open to <span>opportunities</span></h3>
+          <p class="contact-text">
+            I'm actively looking for SDE roles and internship opportunities at product-based companies.
+            Whether you have a project idea, want to collaborate, or just say hi — my inbox is always open.
+          </p>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📧</div>
+              <div class="contact-info-detail">
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value">
+                  <a href="mailto:mukesh_cse_27@msit.in">mukesh_cse_27@msit.in</a><br />
+                  <a href="mailto:mukesh5112002@gmail.com" style="margin-top:3px;display:inline-block;">mukesh5112002@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📱</div>
+              <div class="contact-info-detail">
+                <div class="contact-info-label">Phone</div>
+                <div class="contact-info-value">+91 9310347484</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div class="contact-info-detail">
+                <div class="contact-info-label">Location</div>
+                <div class="contact-info-value">New Delhi, India</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/MUKESH-KHUSWAHA" target="_blank" rel="noopener noreferrer"
+              class="contact-social-btn" id="contact-github">GitHub</a>
+            <a href="https://www.linkedin.com/in/mukesh-kumar-467a85291/" target="_blank" rel="noopener noreferrer"
+              class="contact-social-btn" id="contact-linkedin">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="contact-form-card">
+            <form id="contact-form" novalidate>
+              <!-- Web3Forms access key: replace value with your key from web3forms.com -->
+              <input type="hidden" name="access_key" value="03e4cbec-8125-4052-af75-e6bf5d4b6cf0" />
+              <input type="hidden" name="subject" value="New portfolio contact message" />
+              <!-- Honeypot: invisible to humans, bots fill it — Web3Forms rejects if checked -->
+              <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off" />
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-name">Your name</label>
+                  <input class="form-control" type="text" id="form-name" name="name" placeholder="John Doe" required
+                    autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-email">Your email</label>
+                  <input class="form-control" type="email" id="form-email" name="email" placeholder="john@example.com"
+                    required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-subject">Subject</label>
+                <input class="form-control" type="text" id="form-subject" name="subject"
+                  placeholder="SDE Internship Opportunity" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-message">Message</label>
+                <textarea class="form-control" id="form-message" name="message" rows="5"
+                  placeholder="Hi Mukesh, I'd like to discuss..." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit" id="btn-submit">
+                <span id="submit-text">Send message</span>
+              </button>
+              <div id="form-feedback" style="display:none;margin-top:12px;text-align:center;font-size:0.85rem;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <a href="#hero" class="footer-logo">mukesh.dev</a>
+      <p class="footer-copy">Designed &amp; built by Mukesh Kumar <span>&copy; 2025</span></p>
+      <div class="footer-links">
+        <a href="https://github.com/MUKESH-KHUSWAHA" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mukesh-kumar-467a85291/" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:mukesh_cse_27@msit.in">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
