@@ -1,0 +1,253 @@
+%PDF-1.4
+%����
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+>>
+>>
+>>
+endobj
+4 0 obj
+<<
+/Length 7500
+>>
+stream
+BT
+/F2 24 Tf
+220 740 Td
+(MUKESH KUMAR) Tj
+ET
+BT
+/F1 10 Tf
+170 715 Td
+(New Delhi, India • +91 9310347484 • mukesh_cse_27@msit.in) Tj
+ET
+BT
+/F1 10 Tf
+230 700 Td
+(LinkedIn • GitHub) Tj
+ET
+BT
+/F2 14 Tf
+50 670 Td
+(Education) Tj
+ET
+BT
+/F2 11 Tf
+50 650 Td
+(Maharaja Surajmal Institute of Technology \(GGSIPU\)) Tj
+400 650 Td
+(New Delhi, India) Tj
+ET
+BT
+/F1 10 Tf
+50 635 Td
+(Bachelor of Technology in Computer Science Engineering) Tj
+350 635 Td
+(Expected Graduation: 2027) Tj
+ET
+BT
+/F1 10 Tf
+50 620 Td
+(• Current CGPA: 8.909 / 10.0) Tj
+ET
+BT
+/F1 10 Tf
+50 605 Td
+(• Class XII: 89.5%  • Class X: 81.66%) Tj
+ET
+BT
+/F2 14 Tf
+50 575 Td
+(Experience) Tj
+ET
+BT
+/F2 11 Tf
+50 555 Td
+(Frontend Web Developer Intern — HS Engineering) Tj
+400 555 Td
+(Jun 2025 – Jul 2025) Tj
+ET
+BT
+/F1 10 Tf
+50 540 Td
+(• Developed reusable frontend components for production web applications.) Tj
+ET
+BT
+/F1 10 Tf
+50 525 Td
+(• Built responsive user interfaces using React.js, HTML, CSS, and JavaScript.) Tj
+ET
+BT
+/F1 10 Tf
+50 510 Td
+(• Collaborated remotely with developers to deliver features within project timelines.) Tj
+ET
+BT
+/F1 10 Tf
+50 495 Td
+(• Improved UI consistency and component reusability across multiple pages.) Tj
+ET
+BT
+/F2 14 Tf
+50 465 Td
+(Projects) Tj
+ET
+BT
+/F2 11 Tf
+50 445 Td
+(Vaultly — AI-Powered Personal Finance Platform) Tj
+ET
+BT
+/F1 10 Tf
+50 430 Td
+(• Built a full-stack financial technology platform supporting multi-account expense tracking.) Tj
+ET
+BT
+/F1 10 Tf
+50 415 Td
+(• Integrated Google Gemini AI for automated receipt scanning via OCR.) Tj
+ET
+BT
+/F1 10 Tf
+50 400 Td
+(• Integrated Clerk for secure user authentication and access control.) Tj
+ET
+BT
+/F1 10 Tf
+50 385 Td
+(• Built interactive analytics dashboards using Recharts for spending trends.) Tj
+ET
+BT
+/F2 11 Tf
+50 365 Td
+(DevConnect — Real-Time Developer Social Platform) Tj
+ET
+BT
+/F1 10 Tf
+50 350 Td
+(• Built a full-stack developer social platform with post feed and JWT-secured REST APIs.) Tj
+ET
+BT
+/F1 10 Tf
+50 335 Td
+(• Integrated Groq API \(LLaMA 3\) for AI code review with bug detection.) Tj
+ET
+BT
+/F1 10 Tf
+50 320 Td
+(• Implemented real-time chat using Socket.io with MongoDB for message storage.) Tj
+ET
+BT
+/F1 10 Tf
+50 305 Td
+(• Used Cloudinary for media uploads and protected authenticated routes.) Tj
+ET
+BT
+/F2 14 Tf
+50 275 Td
+(Technical Skills) Tj
+ET
+BT
+/F1 10 Tf
+50 255 Td
+(• Data Structures & Algorithms: 300+ problems solved \(LeetCode, Striver's Sheet\)) Tj
+ET
+BT
+/F1 10 Tf
+50 240 Td
+(• Languages: Java, JavaScript, SQL) Tj
+ET
+BT
+/F1 10 Tf
+50 225 Td
+(• Backend: Node.js, Express.js, REST APIs, JWT Authentication, Socket.io) Tj
+ET
+BT
+/F1 10 Tf
+50 210 Td
+(• Frontend: React.js, HTML5, CSS3, Tailwind CSS) Tj
+ET
+BT
+/F1 10 Tf
+50 195 Td
+(• Database: MongoDB, PostgreSQL) Tj
+ET
+BT
+/F1 10 Tf
+50 180 Td
+(• Tools: Git, GitHub, Postman, Vercel, Render) Tj
+ET
+BT
+/F2 14 Tf
+50 150 Td
+(Achievements & Leadership) Tj
+ET
+BT
+/F1 10 Tf
+50 130 Td
+(• Solved 300+ DSA problems across LeetCode and TakeUForward.) Tj
+ET
+BT
+/F1 10 Tf
+50 115 Td
+(• Technical Society Member, Geek Room \(DSA Department\).) Tj
+ET
+BT
+/F1 10 Tf
+50 100 Td
+(• Maintained a strong academic record — CGPA 8.909/10 in B.Tech CSE.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000074 00000 n 
+0000000131 00000 n 
+0000000295 00000 n 
+0000007847 00000 n 
+0000007925 00000 n 
+trailer
+<<
+/Size 7
+/Root 1 0 R
+>>
+startxref
+8008
+%%EOF
