@@ -226,7 +226,7 @@ if (prefersReducedMotion) {
   if (prefersReducedMotion) return; // numbers already show final values in HTML
 
   const stats = [
-    { selector: '.stat-card:nth-child(1) .stat-number', target: 8.89, decimals: 2 },
+    { selector: '.stat-card:nth-child(1) .stat-number', target: 8.909, decimals: 3 },
     { selector: '.stat-card:nth-child(2) .stat-number', target: 2, decimals: 0, suffix: '+' },
   ];
 

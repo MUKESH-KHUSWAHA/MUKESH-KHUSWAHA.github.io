@@ -70,8 +70,7 @@
         </p>
         <div class="hero-cta">
           <a href="#projects" class="btn-primary" id="cta-view-projects">View projects</a>
-          <a href="https://drive.google.com/file/d/13q51ZMizKg_sBeF9G0LEc3DZWQloM7mS/view?usp=sharing" target="_blank"
-            rel="noopener noreferrer" class="btn-secondary" id="cta-download-resume">Download resume</a>
+          <a href="/public/resume.pdf" download="Mukesh_Kumar_Resume.pdf" class="btn-secondary" id="cta-download-resume">Download resume</a>
         </div>
         <div class="hero-social">
           <span class="hero-social-label">find me on</span>
@@ -116,7 +115,7 @@
             <div class="terminal-line">&nbsp;&nbsp;<span class="terminal-key">"college"</span>: <span
                 class="terminal-string">"MSIT, GGSIPU"</span>,</div>
             <div class="terminal-line">&nbsp;&nbsp;<span class="terminal-key">"cgpa"</span>: <span
-                class="terminal-string">8.89</span>,</div>
+                class="terminal-string">8.909</span>,</div>
             <div class="terminal-line">&nbsp;&nbsp;<span class="terminal-key">"status"</span>: <span
                 class="terminal-string">"open_to_work"</span></div>
             <div class="terminal-line">}</div>
@@ -160,8 +159,8 @@
 
         <div class="about-stats reveal reveal-delay-1">
           <div class="stat-card">
-            <span class="stat-number">8.89</span>
-            <span class="stat-label">CGPA / 10</span>
+            <span class="stat-number">8.909</span>
+            <span class="stat-label">CGPA (Till 6th Sem)</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">2+</span>
@@ -180,7 +179,7 @@
         <div class="about-text reveal reveal-delay-2">
           <p class="bio">
             I'm a <strong>Computer Science Engineering student</strong> at MSIT, GGSIPU (Batch 2027)
-            with a CGPA of <strong>8.89/10</strong>. I build full-stack web applications using the
+            with a CGPA of <strong>8.909/10 (Till 6th Semester)</strong>. I build full-stack web applications using the
             <strong>MERN stack</strong>, with a focus on clean architecture, real-time features, and
             <strong>AI integrations</strong>. I'm actively pursuing SDE roles at product-based companies.
           </p>
@@ -268,16 +267,69 @@
 
       <div class="projects-grid">
 
+        <!-- Vaultly -->
+        <div class="project-card reveal reveal-delay-1" id="project-vaultly">
+          <div class="project-top">
+            <div class="project-icon">💰</div>
+            <div class="project-links">
+              <a href="https://github.com/MUKESH-KHUSWAHA/Vaultly" target="_blank" rel="noopener noreferrer"
+                class="project-link" id="vaultly-github" aria-label="Vaultly GitHub repository" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.27 5.69.41.35.78 1.04.78 2.10 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                </svg>
+              </a>
+              <a href="https://vaultly-khaki.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="project-link" id="vaultly-demo" aria-label="Vaultly live demo" title="Live Demo">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Vaultly</h3>
+          <p class="project-narrative">
+            Built a full-stack financial platform that eliminates manual expense entry through AI-powered receipt scanning.
+            Users simply upload photos and the system extracts transaction details automatically using Google Gemini AI,
+            making personal finance tracking effortless.
+          </p>
+          <ul class="project-description">
+            <li>Multi-account expense tracking with budgeting and analytics dashboards</li>
+            <li>Google Gemini AI integration for automated receipt scanning via OCR</li>
+            <li>Clerk authentication for secure user access and account-level data privacy</li>
+            <li>Interactive charts using Recharts for spending trends and budget comparisons</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Prisma</span>
+            <span class="tech-tag">Clerk</span>
+            <span class="tech-tag">Gemini AI</span>
+            <span class="tech-tag">Recharts</span>
+            <span class="tech-tag">Tailwind CSS</span>
+          </div>
+          <div class="project-action-links">
+            <a href="https://github.com/MUKESH-KHUSWAHA/Vaultly" target="_blank" rel="noopener noreferrer"
+              class="project-action-link github">GitHub</a>
+            <a href="https://vaultly-khaki.vercel.app/" target="_blank" rel="noopener noreferrer"
+              class="project-action-link demo">Live demo</a>
+          </div>
+        </div>
+
         <!-- DevConnect -->
-        <div class="project-card reveal reveal-delay-1" id="project-devconnect">
+        <div class="project-card reveal reveal-delay-2" id="project-devconnect">
           <div class="project-top">
             <div class="project-icon">🔗</div>
             <div class="project-links">
-              <a href="https://github.com/MUKESH-KHUSWAHA/DevConnect.git" target="_blank" rel="noopener noreferrer"
+              <a href="https://github.com/MUKESH-KHUSWAHA/DevConnect" target="_blank" rel="noopener noreferrer"
                 class="project-link" id="devconnect-github" aria-label="DevConnect GitHub repository" title="GitHub">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                   <path
-                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.27 5.69.41.35.78 1.04.78 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.27 5.69.41.35.78 1.04.78 2.10 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
                 </svg>
               </a>
               <a href="https://dev-connect-4akd.vercel.app/" target="_blank" rel="noopener noreferrer"
@@ -293,16 +345,15 @@
 
           <h3 class="project-title">DevConnect</h3>
           <p class="project-narrative">
-            A social platform built for developers to find each other, chat in real time, and share job leads —
-            the kind of community feature most dev tools bolt on as an afterthought. The harder part was
-            getting presence and typing indicators to feel instant over Socket.io without flooding the
-            server with events.
+            A social platform built for developers to connect, share code snippets, and collaborate in real time.
+            The challenge was implementing instant presence tracking and typing indicators over Socket.io while
+            maintaining performance across concurrent connections.
           </p>
           <ul class="project-description">
-            <li>MERN-based developer social platform with JWT authentication and REST APIs</li>
-            <li>Real-time messaging and online presence tracking using Socket.io</li>
-            <li>State management with Zustand for efficient client-side data handling</li>
-            <li>Deployed on Vercel (frontend) and Render (backend) for production-grade hosting</li>
+            <li>Full-stack developer social platform with post feed, likes, comments, and bookmarks</li>
+            <li>Real-time chat with typing indicators and live presence tracking using Socket.io</li>
+            <li>AI-powered code review via Groq API (LLaMA 3) for bug detection and complexity analysis</li>
+            <li>Cloudinary integration for media uploads with JWT-secured REST APIs</li>
           </ul>
           <div class="tech-tags">
             <span class="tech-tag">MongoDB</span>
@@ -310,34 +361,74 @@
             <span class="tech-tag">React.js</span>
             <span class="tech-tag">Node.js</span>
             <span class="tech-tag">Socket.io</span>
+            <span class="tech-tag">Groq API</span>
             <span class="tech-tag">JWT</span>
-            <span class="tech-tag">Zustand</span>
-            <span class="tech-tag">Vercel</span>
-            <span class="tech-tag">Render</span>
+            <span class="tech-tag">Cloudinary</span>
           </div>
           <div class="project-action-links">
-            <a href="https://github.com/MUKESH-KHUSWAHA/DevConnect.git" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/MUKESH-KHUSWAHA/DevConnect" target="_blank" rel="noopener noreferrer"
               class="project-action-link github">GitHub</a>
             <a href="https://dev-connect-4akd.vercel.app/" target="_blank" rel="noopener noreferrer"
               class="project-action-link demo">Live demo</a>
           </div>
         </div>
 
-        <!-- Expense Tracker -->
-        <div class="project-card reveal reveal-delay-2" id="project-expense-tracker">
+        <!-- Vikalp (EcoVision) -->
+        <div class="project-card reveal reveal-delay-3" id="project-vikalp">
           <div class="project-top">
-            <div class="project-icon">💰</div>
+            <div class="project-icon">🌱</div>
             <div class="project-links">
-              <a href="https://github.com/MUKESH-KHUSWAHA/expense-tracker.git" target="_blank" rel="noopener noreferrer"
-                class="project-link" id="expense-github" aria-label="Expense Tracker GitHub repository" title="GitHub">
+              <a href="https://github.com/MUKESH-KHUSWAHA/vikalp.life" target="_blank" rel="noopener noreferrer"
+                class="project-link" id="vikalp-github" aria-label="Vikalp GitHub repository" title="GitHub">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                   <path
-                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.27 5.69.41.35.78 1.04.78 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.10 0 4.43-2.7 5.41-5.27 5.69.41.35.78 1.04.78 2.10 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5 Z" />
                 </svg>
               </a>
-              <a href="https://expense-tracker-nine-pearl-63.vercel.app/dashboard" target="_blank"
-                rel="noopener noreferrer" class="project-link" id="expense-demo" aria-label="Expense Tracker live demo"
-                title="Live Demo">
+            </div>
+          </div>
+
+          <h3 class="project-title">Vikalp</h3>
+          <p class="project-narrative">
+            An environmental waste management platform enabling communities to report and track waste issues.
+            Features include interactive map integration for precise location tagging and Firebase authentication
+            for secure user management, promoting collective environmental action.
+          </p>
+          <ul class="project-description">
+            <li>React-based waste reporting system with drag-and-drop image uploads</li>
+            <li>Interactive maps powered by Leaflet/OpenStreetMap for location selection</li>
+            <li>Firebase Authentication with email and Google OAuth integration</li>
+            <li>Real-time dashboard for filtering and viewing reported environmental issues</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Vite</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Leaflet</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Multer</span>
+          </div>
+          <div class="project-action-links">
+            <a href="https://github.com/MUKESH-KHUSWAHA/vikalp.life" target="_blank" rel="noopener noreferrer"
+              class="project-action-link github">GitHub</a>
+          </div>
+        </div>
+
+        <!-- AI Agency -->
+        <div class="project-card reveal reveal-delay-4" id="project-ai-agency">
+          <div class="project-top">
+            <div class="project-icon">🤖</div>
+            <div class="project-links">
+              <a href="https://github.com/MUKESH-KHUSWAHA/agency_4_ai_react" target="_blank" rel="noopener noreferrer"
+                class="project-link" id="ai-agency-github" aria-label="AI Agency GitHub repository" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.10 0 4.43-2.7 5.41-5.27 5.69.41.35.78 1.04.78 2.10 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                </svg>
+              </a>
+              <a href="https://agency-4-ai-react.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="project-link" id="ai-agency-demo" aria-label="AI Agency live demo" title="Live Demo">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                   <path d="M15 3h6v6" />
@@ -347,32 +438,30 @@
             </div>
           </div>
 
-          <h3 class="project-title">Expense Tracker</h3>
+          <h3 class="project-title">AI Agency</h3>
           <p class="project-narrative">
-            Most expense trackers just show you a list of numbers. This one summarizes your spending in plain
-            language using the Groq API, so you get an actual answer to "where did my money go this month?"
-            instead of a spreadsheet to interpret yourself.
+            A modern, responsive frontend showcasing an AI agency's services and capabilities. Built with
+            performance-first principles using Vite for fast builds and Framer Motion for fluid animations,
+            demonstrating modern web development best practices.
           </p>
           <ul class="project-description">
-            <li>MERN-based expense tracker with secure authentication and CRUD operations</li>
-            <li>AI-generated spending insights via Groq API for personalized financial analysis</li>
-            <li>JWT-based session management for secure user data protection</li>
-            <li>Deployed on Vercel with clean, responsive dashboard UI</li>
+            <li>Fully responsive design with modern UI built using Tailwind CSS</li>
+            <li>Smooth animations and transitions powered by Framer Motion</li>
+            <li>Dark mode support with optimized color schemes for accessibility</li>
+            <li>Production-ready deployment on Vercel with optimized builds via Vite</li>
           </ul>
           <div class="tech-tags">
-            <span class="tech-tag">MongoDB</span>
-            <span class="tech-tag">Express.js</span>
-            <span class="tech-tag">React.js</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">Groq API</span>
-            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Vite</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Framer Motion</span>
             <span class="tech-tag">Vercel</span>
           </div>
           <div class="project-action-links">
-            <a href="https://github.com/MUKESH-KHUSWAHA/expense-tracker.git" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/MUKESH-KHUSWAHA/agency_4_ai_react" target="_blank" rel="noopener noreferrer"
               class="project-action-link github">GitHub</a>
-            <a href="https://expense-tracker-nine-pearl-63.vercel.app/dashboard" target="_blank"
-              rel="noopener noreferrer" class="project-action-link demo">Live demo</a>
+            <a href="https://agency-4-ai-react.vercel.app/" target="_blank" rel="noopener noreferrer"
+              class="project-action-link demo">Live demo</a>
           </div>
         </div>
 
@@ -501,7 +590,7 @@
             web technologies.
           </div>
           <div class="edu-meta">
-            <span class="edu-badge">CGPA: 8.89/10</span>
+            <span class="edu-badge">CGPA: 8.909/10 (Till 6th Sem)</span>
             <span class="edu-year">Expected 2027</span>
           </div>
         </div>
@@ -565,8 +654,8 @@
 
         <div class="achievement-card reveal reveal-delay-4">
           <div class="achievement-icon-wrap">⭐</div>
-          <div class="achievement-title">Academic Excellence — CGPA 8.89</div>
-          <div class="achievement-desc">Maintaining a strong CGPA of 8.89/10 in B.Tech CSE at MSIT, GGSIPU while
+          <div class="achievement-title">Academic Excellence — CGPA 8.909</div>
+          <div class="achievement-desc">Maintaining a strong CGPA of 8.909/10 (Till 6th Semester) in B.Tech CSE at MSIT, GGSIPU while
             actively building full-stack projects.</div>
         </div>
       </div>
